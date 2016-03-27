@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/config_shape">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp"
+        android:text="@string/config_title"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/config_margin_bottom"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginLeft="@dimen/margin_20dp"
+        android:layout_marginRight="@dimen/margin_20dp">
+
+        <TextView
+            android:id="@+id/changeLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/change_label_text"
+            style="@style/ConfigItemTextView"
+            />
+
+        <EditText
+            android:id="@+id/changeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/config_edit_text_height"
+            android:ems="8"
+            android:background="@drawable/value_shape"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:digits="qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM"
+            android:imeOptions="actionDone"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:layout_gravity="right"
+            android:inputType="text"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/changeDecrement"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/config_edit_text_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                style="@style/ValueEditText" />
+
+            <TextView
+                android:id="@+id/changeDecrementTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeDecrement"
+                android:layout_centerInParent="true"
+                android:text="@string/change_decrement_text"
+                style="@style/ConfigItemTextView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/changeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/config_edit_text_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="numberSigned"
+                style="@style/ValueEditText" />
+
+            <TextView
+                android:id="@+id/changeValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/changeValue"
+                android:layout_centerInParent="true"
+                android:text="@string/change_value_text"
+                style="@style/ConfigItemTextView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/changeIncrement"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/config_edit_text_height"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                style="@style/ValueEditText" />
+
+            <TextView
+                android:id="@+id/changeIncrementTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/changeIncrement"
+                android:text="@string/change_increment_text"
+                style="@style/ConfigItemTextView" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_10dp">
+
+        <TextView
+            android:id="@+id/changeColorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/change_color"
+            style="@style/ConfigItemTextView"
+            />
+
+        <Spinner
+            android:id="@+id/colorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/config_edit_text_height"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_8dp"
+        android:text="@string/reset_button"
+        android:background="@drawable/button_shape"
+        android:onClick="resetValues"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_8dp"
+        android:text="@string/delete_button"
+        android:background="@drawable/button_shape"
+        android:onClick="deleteCounter" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_8dp"
+        android:layout_marginRight="@dimen/margin_8dp"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:text="@string/save_button"
+        android:background="@drawable/button_shape"
+        android:onClick="updateCounterData"/>
+
+</LinearLayout>

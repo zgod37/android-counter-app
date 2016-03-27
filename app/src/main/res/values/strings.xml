@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Basic Score Counter</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Top row -->
+    <string name="counter_list_title">Counters</string>
+    <string name="add_button">Add new</string>
+
+    <!-- Add Counter Form -->
+    <string name="add_title">Add counter</string>
+    <string name="add_name">Counter name</string>
+
+    <!-- Counters -->
+    <string name="counter_label">counter%1$d</string>
+    <string name="counter_value">000</string>
+    <string name="incr_button">+</string>
+    <string name="decr_button">-</string>
+    <string name="config_button">Config</string>
+
+    <!-- Config Window -->
+    <string name="config_title">Configure counter</string>
+    <string name="change_label_text">Label</string>
+    <string name="change_value_text">Value</string>
+    <string name="reset_button">Reset values to default</string>
+    <string name="change_color_button">Change color</string>
+    <string name="delete_button">Delete counter</string>
+    <string name="save_button">Save changes</string>
+    <string name="change_increment_text">Increment</string>
+    <string name="change_decrement_text">Decrement</string>
+    <string name="change_color">Background color</string>
+
+    <string-array name="color_names">
+        <item>Pink</item>
+        <item>Red</item>
+        <item>Orange</item>
+        <item>Yellow</item>
+        <item>Brown</item>
+        <item>Green</item>
+        <item>Cyan</item>
+        <item>Blue</item>
+        <item>Purple</item>
+        <item>Gray</item>
+    </string-array>
+
+    <!-- Options Menu -->
+    <string name="reset_all_counters">Reset All</string>
+    <string name="remove_all_counters">Remove All</string>
+
+    <!-- AlertDialog -->
+    <string name="alert_confirmation_title">Are you sure?</string>
+    <string name="alert_max_title">Counter Limit Reached!</string>
+    <string name="alert_max_message">Error: Number of counters limited to </string>
+    <string name="alert_remove_all_title">Remove all counters?</string>
+    <string name="alert_remove_all_message">Are you sure? This will remove all counters and cannot be undone.</string>
+    <string name="alert_reset_all_title">Reset all counters to zero?</string>
+    <string name="alert_reset_all_message">Are you sure? This will reset all counters to zero. This cannot be undone.</string>
+
+</resources>

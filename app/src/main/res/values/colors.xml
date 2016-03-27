@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000</color>
+    <color name="white">#FFF</color>
+
+    <item name="lightpink" type="color">#FFB6C1</item>
+    <item name="darksalmon" type="color">#E9967A</item>
+    <item name="coral" type="color">#FF7F50</item>
+    <item name="peachpuff" type="color">#FFDAB9</item>
+    <item name="blanchedalmond" type="color">#FFEBCD</item>
+    <item name="olive" type="color">#808000</item>
+    <item name="aquamarine" type="color">#7FFFD4</item>
+    <item name="skyblue" type="color">#87CEEB</item>
+    <item name="lavender" type="color">#E6E6FA</item>
+    <item name="gray" type="color">#808080</item>
+
+    <item name="pink" type="color">#FFC0CB</item>
+    <item name="crimson" type="color">#DC143C</item>
+    <item name="orange" type="color">#FFA500</item>
+    <item name="gold" type="color">#FFD700</item>
+    <item name="tan" type="color">#D2B48C</item>
+    <item name="limegreen" type="color">#32CD32</item>
+    <item name="turquoise" type="color">#40E0D0</item>
+    <item name="royalblue" type="color">#4169E1</item>
+    <item name="purple" type="color">#800080</item>
+    <item name="silver" type="color">#C0C0C0</item>
+
+    <integer-array name="counter_colors">
+        <item>@color/pink</item>
+        <item>@color/crimson</item>
+        <item>@color/orange</item>
+        <item>@color/gold</item>
+        <item>@color/tan</item>
+        <item>@color/limegreen</item>
+        <item>@color/turquoise</item>
+        <item>@color/royalblue</item>
+        <item>@color/purple</item>
+        <item>@color/silver</item>
+    </integer-array>
+
+    <integer-array name="counter_colors2">
+        <item>@color/lightpink</item>
+        <item>@color/darksalmon</item>
+        <item>@color/coral</item>
+        <item>@color/peachpuff</item>
+        <item>@color/blanchedalmond</item>
+        <item>@color/olive</item>
+        <item>@color/aquamarine</item>
+        <item>@color/skyblue</item>
+        <item>@color/lavender</item>
+        <item>@color/gray</item>
+    </integer-array>
+
+</resources>

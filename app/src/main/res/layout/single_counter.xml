@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:background="#CD5C5C" >
+
+    <TextView
+        android:id="@+id/counterId"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/counterLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/row_margins"
+        android:layout_marginRight="@dimen/row_margins"
+        android:layout_weight="1"
+        android:text="@string/counter_label"
+        android:onClick="openConfigWindow"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/decrButton"
+        android:layout_width="@dimen/row_button_size"
+        android:layout_height="@dimen/row_button_size"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#736B6B"
+        android:shadowRadius="5"
+        android:text="@string/decr_button"
+        android:textColor="#000000"
+        android:textSize="38sp"
+        android:onClick="decrementCounter"/>
+    
+    <TextView
+        android:id="@+id/counterValue"
+        android:layout_width="@dimen/row_value_width"
+        android:layout_height="@dimen/row_value_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/row_margins"
+        android:layout_marginLeft="@dimen/row_margins"
+        android:layout_marginRight="@dimen/row_margins"
+        android:layout_marginStart="@dimen/row_margins"
+        android:background="@drawable/value_shape"
+        android:gravity="center"
+        android:text="@string/counter_value"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/incrButton"
+        android:layout_width="@dimen/row_button_size"
+        android:layout_height="@dimen/row_button_size"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#736B6B"
+        android:shadowRadius="5"
+        android:text="@string/incr_button"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:onClick="incrementCounter"/>
+
+</TableRow>

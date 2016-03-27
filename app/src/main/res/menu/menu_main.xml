@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="zgproductions.basicscorecounter.MainActivity">
+    <item
+        android:id="@+id/remove_all_counters"
+        android:title="@string/remove_all_counters"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/reset_all_counters"
+        android:title="@string/reset_all_counters"
+        app:showAsAction="never" />
+
+</menu>
